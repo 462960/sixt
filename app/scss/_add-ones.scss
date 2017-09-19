@@ -1,0 +1,89 @@
+
+
+/*------------------- Border box model------------------- */
+
+ * {box-sizing: border-box; }
+/* ------------------------Font------------------------ */
+ * {
+        font-family: 'Roboto', sans-serif;
+        font-size: 18px;
+      }
+
+/*------------------------ Mixins------------------------ */
+
+/* Button-border styles */
+@mixin button-border($color-and-border, $color-hover, $background-hover) {
+font-family: "Helvetica";
+font-size: 22px;
+color: $color-and-border;
+border: $color-and-border solid 3px;
+text-align: center;
+transition: all .7s;
+display: block;
+padding: 19px 0;
+margin: 0 auto;
+&:hover {
+  transition: all .7s;
+  color: $color-hover;
+  background: $background-hover;
+}
+ &:active {
+  transition: all .7s;
+  color: #23ba85;
+  background: #e7e7e7;
+ }
+}
+/* Button-menu styles */
+@mixin button($color, $border-color) {
+    font-size: 16px;
+    margin-right: 55px;
+    color: $color;
+    font-family: "Helvetica";
+    padding: 2px 0;
+    &:last-child {margin-right: 0;}
+    &:hover {
+  border-bottom: $border-color solid 2px ;
+  transition: all .4s;
+    }
+}
+
+/*------------------ Variables------------------ */
+$min-width: 320px;
+$min-width: 1600px;
+
+/* Breakpoints */
+$bp-small: 400px;
+$bp-small-plus: 550px;
+$bp-tablet: 720px;
+$bp-desktop: 900px;
+$bp-desktop-l: 1100px;
+
+
+/* All about ON and OFF blocks depending on Small, Medium or Large layout */
+
+/* .s-out,.sm-out,.sl-out  {
+  display: none;
+}
+
+.ml-out, .l-out {
+  display: block;
+}
+
+ @include susy-breakpoint ($bp-tablet $bp-desktop){ 
+   .s-out,.l-out,.sl-out {
+  display: block;
+}
+.m-out,.sm-out,.ml-out {
+  display: none;
+} }
+
+ @include susy-breakpoint ($bp-desktop) { 
+   .s-out,.m-out,.sm-out {
+  display: block;
+}
+.l-out,.sl-out,.ml-out {
+  display: none;
+} } */
+
+/*---------------------- The end of ON and OFF blocks---------------------- */
+

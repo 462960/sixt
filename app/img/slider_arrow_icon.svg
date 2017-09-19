@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="10px" height="17px" viewBox="0 0 10 17" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 42 (36781) - http://www.bohemiancoding.com/sketch -->
+    <title>arrow_slider</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="homepage4" transform="translate(-1544.000000, -522.000000)" fill="#FFFFFF">
+            <g id="arrow_right" transform="translate(1525.000000, 508.000000)">
+                <g id="Group-2" transform="translate(19.000000, 14.000000)">
+                    <path d="M7.75955258,7.31843556 L1.34915439,0.848277699 L0.0570401278,2.12835138 L6.49034537,8.6125042 L0.0760719993,15.1524214 L1.3712935,16.4161266 L7.76998364,9.90225647 L7.77227228,9.90456321 L9.07487349,8.64601829 L9.03928941,8.61010249 L9.04522497,8.60406009 L7.75957628,7.31841139 Z" id="arrow_slider"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

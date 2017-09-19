@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang='ru' xml:lang='ru' xmlns='http://www.w3.org/1999/xhtml'>
+<head>
+  <meta content='text/html; charset=utf-8' http-equiv='Content-Type' >
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>SixT</title>
+  <!--build:css js/main.min.css -->
+  <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+  <link href='css/normalize.css' rel='stylesheet' type='text/css'>
+  <link href='css/styles.css' rel='stylesheet' type='text/css'>
+  <!-- endbuild -->
+<!--build:js js/main.min.js -->
+  <script src='JS/jquery-1.7.2.min.js' type='text/javascript'></script>
+  <script src='JS/jquery.cycle2.min.js' type='text/javascript'></script>
+  <script src='JS/jquery-picture-min.js' type='text/javascript'></script>
+  <script src='JS/project.js' type='text/javascript'></script>
+  <!-- endbuild -->
+ <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCWbkXU5ryvxLsdp2F_O6WR3YsfAMK3bmY&libraries=places"></script>
+  <script> google.maps.event.addDomListener(window, 'load', initialize);</script>
+</head>
+<body>
+  <div class="wrapper">
+    
+  <!-- Header -->
+  <header>
+    <div class="top-wrap">
+      <a href="#" class="logo"></a>
+      <!-- Main menu -->
+      <ul class="top-nav">
+        <li id="burger">
+          <a href="#">MENU</a>
+        </li>
+        <li>
+          <a href="#">LOGIN</a>
+        </li>
+        <li>
+          <a href="#">LANGUAGE</a>
+        </li>
+      </ul>
+      <!-- Drop down menu -->
+      <ul class="drop-nav slide-up">
+        <li class="active">
+          <a  href="#">Car Rental</a>
+        </li>
+        <li>
+          <a href="#">Truck Rental</a>
+        </li>
+        <li>
+          <a href="#">Best Deals</a>
+        </li>
+        <li>
+          <a href="#">Vehicles</a>
+        </li>
+        <li>
+          <a href="#" target="blank">GitHub</a>
+        </li>
+      </ul>
+      <div class="clearfix"></div>
+  </div>
+</header>
+
+
+    
+       <!--  Slider -->
+    <div class="cycle-slideshow"  
+    data-cycle-fx=scrollHorz
+    data-cycle-timeout=0>
+    	<div class="cycle-next"></div>
+    	<div class="cycle-prev"></div>
+    	<img src="img/slide1.jpg">
+    	<img src="img/slide2.jpg">
+    	<img src="img/slide3.jpg">
+    </div>
+
+<div class="date-picker">
+	<form action="">
+	<div class="pickup-place-holder">
+		<label for="location">Pickup location</label>
+		<input type="text" id="search-box" name="location">
+	</div>
+	<div class="all-dates-holder">
+		<div class="pickup-date-holder">
+			<label for="location">Pickup date</label>
+			<input type="text" id="" name="location">
+		</div>
+		<div class="return-date-holder">
+			<label for="location">Return date</label>
+			<input type="text" id="" name="location">
+		</div>
+	</div>
+	<button><span>Submit</span><span></span></button>
+	</form>
+</div>
+
+
+<main>
+	<h3>Car Rental</h3>
+	<div class="text-block">
+		<div >
+			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis molestie velit vitae metus tempus, ultricies facilisis ligula maximus. Etiam ultricies purus massa, sit amet vulputate nisi malesuada quis. Proin eu nunc non sem malesuada imperdiet quis nec nisl. Donec at laoreet nisl, ac ullamcorper metus. Curabitur porttitor nulla vitae lacus fermentum, eget rutrum nibh consequat. Cras ac faucibus risus. Fusce hendrerit, nulla in pharetra dictum, leo turpis dictum odio, a ultricies diam ligula nec leo. Curabitur vitae turpis eget tortor facilisis maximus. Nulla velit leo, tempor nec dictum ac, maximus sit amet dolor. Vestibulum dictum commodo leo, eu eleifend urna consequat et. Maecenas aliquam tempus leo, eu fringilla mauris. Integer non porta quam, ut volutpat nisl. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Etiam sed turpis interdum, eleifend ante nec, tempus ex. Mauris laoreet neque ut eros consequat, eget eleifend tellus interdum. Nam non elit dictum, rhoncus metus in, fringilla justo.</p>
+			<p>Aenean facilisis arcu sagittis ante fermentum, vel aliquam quam hendrerit. Nam mattis tempus tellus, eget efficitur mi aliquet at. Morbi bibendum ut ipsum ac ornare. Mauris eget accumsan risus, sed consectetur turpis. Nunc sed placerat lacus, at vestibulum eros. Donec tempus vulputate sapien quis tincidunt. Praesent tincidunt sapien vel odio efficitur efficitur. Proin odio nisi, varius quis magna nec, gravida vestibulum ligula. Duis venenatis eleifend maximus. Integer finibus placerat risus, ac hendrerit elit tincidunt et. Etiam pharetra sagittis mollis. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla et lacus non ante viverra ullamcorper. Nulla porta sapien ut sagittis blandit. Praesent dapibus malesuada nisl quis malesuada. Quisque in elementum erat.</p>
+			<p>Duis vel turpis et libero tempus imperdiet. Donec vel efficitur tortor, ut gravida odio. Pellentesque nisl diam, egestas ac feugiat non, placerat non diam. Curabitur in mauris vel nulla iaculis maximus sed sit amet est. Phasellus quis magna mi. Vestibulum pulvinar congue felis, non mattis velit elementum ac. Ut sagittis sem ut aliquam ullamcorper.</p>
+			<p>Morbi congue vitae nisl vitae aliquet. Fusce aliquam tincidunt purus, vitae tempus nibh rhoncus tristique. In at erat vel lacus vulputate sagittis vel sit amet libero. Quisque accumsan auctor ullamcorper. Vestibulum gravida dignissim libero, non scelerisque turpis. Donec cursus consectetur mollis. Aenean neque orci, pulvinar vitae imperdiet et, tincidunt id orci. Quisque aliquam, eros sed malesuada porttitor, nisl orci finibus enim, at maximus odio justo ut ligula.</p>
+		</div>
+		<div >
+			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis molestie velit vitae metus tempus, ultricies facilisis ligula maximus. Etiam ultricies purus massa, sit amet vulputate nisi malesuada quis. Proin eu nunc non sem malesuada imperdiet quis nec nisl. Donec at laoreet nisl, ac ullamcorper metus. Curabitur porttitor nulla vitae lacus fermentum, eget rutrum nibh consequat. Cras ac faucibus risus. Fusce hendrerit, nulla in pharetra dictum, leo turpis dictum odio, a ultricies diam ligula nec leo. Curabitur vitae turpis eget tortor facilisis maximus. Nulla velit leo, tempor nec dictum ac, maximus sit amet dolor. Vestibulum dictum commodo leo, eu eleifend urna consequat et. Maecenas aliquam tempus leo, eu fringilla mauris. Integer non porta quam, ut volutpat nisl. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Etiam sed turpis interdum, eleifend ante nec, tempus ex. Mauris laoreet neque ut eros consequat, eget eleifend tellus interdum. Nam non elit dictum, rhoncus metus in, fringilla justo.</p>
+			<p>Aenean facilisis arcu sagittis ante fermentum, vel aliquam quam hendrerit. Nam mattis tempus tellus, eget efficitur mi aliquet at. Morbi bibendum ut ipsum ac ornare. Mauris eget accumsan risus, sed consectetur turpis. Nunc sed placerat lacus, at vestibulum eros. Donec tempus vulputate sapien quis tincidunt. Praesent tincidunt sapien vel odio efficitur efficitur. Proin odio nisi, varius quis magna nec, gravida vestibulum ligula. Duis venenatis eleifend maximus. Integer finibus placerat risus, ac hendrerit elit tincidunt et. Etiam pharetra sagittis mollis. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla et lacus non ante viverra ullamcorper. Nulla porta sapien ut sagittis blandit. Praesent dapibus malesuada nisl quis malesuada. Quisque in elementum erat.</p>
+			<p>Duis vel turpis et libero tempus imperdiet. Donec vel efficitur tortor, ut gravida odio. Pellentesque nisl diam, egestas ac feugiat non, placerat non diam. Curabitur in mauris vel nulla iaculis maximus sed sit amet est. Phasellus quis magna mi. Vestibulum pulvinar congue felis, non mattis velit elementum ac. Ut sagittis sem ut aliquam ullamcorper.</p>
+			<p>Morbi congue vitae nisl vitae aliquet. Fusce aliquam tincidunt purus, vitae tempus nibh rhoncus tristique. In at erat vel lacus vulputate sagittis vel sit amet libero. Quisque accumsan auctor ullamcorper. Vestibulum gravida dignissim libero, non scelerisque turpis. Donec cursus consectetur mollis. Aenean neque orci, pulvinar vitae imperdiet et, tincidunt id orci. Quisque aliquam, eros sed malesuada porttitor, nisl orci finibus enim, at maximus odio justo ut ligula.</p>
+		</div>
+	</div>
+</main>
+
+    <!--Footer-->
+    <footer>
+      <div class="copyright">&#169; sixt.skepton.ru</div>
+    </footer>
+  </div>
+</body>
+
+</html>

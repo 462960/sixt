@@ -1,0 +1,37 @@
+  <!-- Header -->
+  <header>
+    <div class="top-wrap">
+      <a href="#" class="logo"></a>
+      <!-- Main menu -->
+      <ul class="top-nav">
+        <li id="burger">
+          <a href="#">MENU</a>
+        </li>
+        <li>
+          <a href="#">LOGIN</a>
+        </li>
+        <li>
+          <a href="#">LANGUAGE</a>
+        </li>
+      </ul>
+      <!-- Drop down menu -->
+      <ul class="drop-nav slide-up">
+        <li class="active">
+          <a  href="#">Car Rental</a>
+        </li>
+        <li>
+          <a href="#">Truck Rental</a>
+        </li>
+        <li>
+          <a href="#">Best Deals</a>
+        </li>
+        <li>
+          <a href="#">Vehicles</a>
+        </li>
+        <li>
+          <a href="#" target="blank">GitHub</a>
+        </li>
+      </ul>
+      <div class="clearfix"></div>
+  </div>
+</header>

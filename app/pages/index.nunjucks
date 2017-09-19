@@ -1,0 +1,11 @@
+{% extends "layout.nunjucks" %}
+<!-- Header -->
+{% block header %}
+{% include "partials/part-header.nunjucks" %}
+{% endblock %}
+
+{% block content %}
+{% include "partials/part-slider.nunjucks" %}
+{% include "partials/part-datepicker.nunjucks" %}
+{% include "partials/part-dummi-text.nunjucks" %}
+{% endblock %}

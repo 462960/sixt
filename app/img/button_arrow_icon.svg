@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="14px" height="20px" viewBox="0 0 14 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 39.1 (31720) - http://www.bohemiancoding.com/sketch -->
+    <title>button_arrow@3x</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="homepage" transform="translate(-1008.000000, -477.000000)" fill="#FFFFFF">
+            <g id="IBE" transform="translate(125.000000, 403.000000)">
+                <g id="button" transform="translate(845.000000, 59.000000)">
+                    <polygon id="button_arrow" transform="translate(44.663333, 24.995000) scale(1, -1) rotate(180.000000) translate(-44.663333, -24.995000) " points="51.3266665 17.3321666 48.8054053 15 38 24.9949999 48.8054053 34.9899998 51.3266665 32.6578331 43.0425225 24.9949999"></polygon>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
