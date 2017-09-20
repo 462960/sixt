@@ -130,9 +130,6 @@ gulp.task('default',[
     ]);
 
 
-// Zell blog
-// https://css-tricks.com/gulp-for-beginners
-
 // Optimization Tasks 
 // ------------------
 

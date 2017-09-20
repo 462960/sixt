@@ -1,7 +1,7 @@
   <!-- Header -->
   <header>
     <div class="top-wrap">
-      <a href="#" class="logo"></a>
+      <a href="#" class="logo">Sixt</a>
       <!-- Main menu -->
       <ul class="top-nav">
         <li id="burger">
@@ -11,7 +11,7 @@
           <a href="#">LOGIN</a>
         </li>
         <li>
-          <a href="#">LANGUAGE</a>
+          <a href="https://github.com/462960/sixt" target="blank" >GitHub</a>
         </li>
       </ul>
       <!-- Drop down menu -->
@@ -27,9 +27,6 @@
         </li>
         <li>
           <a href="#">Vehicles</a>
-        </li>
-        <li>
-          <a href="#" target="blank">GitHub</a>
         </li>
       </ul>
       <div class="clearfix"></div>

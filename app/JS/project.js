@@ -1,9 +1,4 @@
 
-// Responsive images
-// $(function(){
-//     $('.responsive').picture();
-// });
-
 // Google Autocomplete
 function initialize(){
   const input = document.getElementById('search-box');
@@ -30,6 +25,14 @@ $('.drop-nav li').click(function(e){
   $('ul.drop-nav').addClass('slide-up');
 });
 
+// Datepicker
+$('.datepicker').datepick();
+
+// Form reset
+$('#button').click(function(e){
+  e.preventDefault();
+  $('form')[0].reset();
+  })
 });
 
 
