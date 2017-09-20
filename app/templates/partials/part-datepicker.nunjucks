@@ -1,6 +1,6 @@
 {# Date Picker #}
 <div class="date-picker">
-	<form action="">
+	<form id="form" action="">
 	<div class="pickup-place-holder">
 		<label for="location">Pickup location</label>
 		<input type="text" id="search-box" name="location">
@@ -8,13 +8,13 @@
 	<div class="all-dates-holder">
 		<div class="pickup-date-holder">
 			<label for="location">Pickup date</label>
-			<input type="text" id="" name="location">
+			<input type="text" class="datepicker" name="location">
 		</div>
 		<div class="return-date-holder">
 			<label for="location">Return date</label>
-			<input type="text" id="" name="location">
+			<input type="text" class="datepicker" name="location">
 		</div>
 	</div>
-	<button><span>Submit</span><span></span></button>
+	<button id="button"><span>Submit</span><span></span></button>
 	</form>
 </div>
