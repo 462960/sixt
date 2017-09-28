@@ -20,9 +20,8 @@ header {
 }
 .logo {
     display: block;
-    position: absolute;
-    top: 33px;
-    left: 22px;
+   float: left;
+   margin-top: 23px;
     height: 28px;
     width: 120px;
     cursor: pointer;
@@ -34,11 +33,10 @@ header {
     overflow: hidden;
     @media (min-width: $bp-small){
       height: 28px;
-      width: 200px;
+      width: 160px;
     }
     @media (min-width: $bp-tablet){
-      top: 10px;
-      left: 20px;
+      margin-top: 10px;
       height: 58px;
       width: 250px;
      }
@@ -51,16 +49,16 @@ header {
   max-width: 960px;
   min-width: 320px;
   margin: 0 auto;
+  z-index: 113;
   .top-nav {
-    position: absolute;
+    position: relative;
+    float: right;
     background: #000;
     height: 80px;
     width: 160px;
-    top: 0;
-    right: 20px;
     padding-top: 30px;
     display: block;
-    z-index: 105;
+    z-index: 113;
     @media (min-width: $bp-small){
       width: 195px;
     }
@@ -119,10 +117,12 @@ header {
 .drop-nav {
   background: #fff;
   width: 160px;
-  position: absolute;
-  z-index: 102;
+   position: absolute;
+  top: -150px;
+  z-index: 110;
   right: 20px;
   border: 1px solid #000;
+   transition: top 0.8s; 
   li {
     padding: 5px;
     cursor: pointer;
@@ -139,14 +139,10 @@ header {
   }
 }
 .active {background: #FF7D19; }
-.slide-up {
-    top: -150px;
-    transition: top 0.8s;
-  }
-.slide-down {
-    top: 80px;
-    transition: top 0.8s;
-  }
+.slide-menu {
+   top: 80px;
+   transition: top 0.8s;
+ } 
 /*--------------------------------------------- Slideshow--------------------------------------------- */
 .cycle-slideshow {z-index: 1;}
 .cycle-prev,.cycle-next  {
@@ -166,12 +162,12 @@ header {
     right: 0;
     }
   }
-  .cycle-prev {
+  .cycle-next {
     right: 10px;
     &:before {transform: rotate(-45deg); bottom: 5px;}
     &:after {transform: rotate(45deg); }
   }
-  .cycle-next {
+  .cycle-prev {
     left: 10px;
     &:before {transform: rotate(45deg); bottom: 5px;}
     &:after {transform: rotate(-45deg); }
@@ -195,7 +191,7 @@ header {
       display: flex;
       & > * {
         flex: 4;
-        border-right: 6px solid #fff;
+        margin-right: 6px;
         &:last-child {
          flex: 1;
          height: 40px;
@@ -267,8 +263,8 @@ header {
   display: flex;
   & > * {
     flex: 1;
-    &:first-child {border-right: 2px solid #fff;}
-    &:last-child {border-left: 2px solid #fff;}
+    &:first-child {margin-right: 2px;}
+    &:last-child {margin-left: 2px ;}
     input {width: 100%;}
 }
 }

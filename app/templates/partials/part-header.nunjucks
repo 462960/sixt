@@ -15,7 +15,7 @@
         </li>
       </ul>
       <!-- Drop down menu -->
-      <ul class="drop-nav slide-up">
+      <ul class="drop-nav">
         <li class="active">
           <a  href="#">Car Rental</a>
         </li>
@@ -29,6 +29,6 @@
           <a href="#">Vehicles</a>
         </li>
       </ul>
-      <div class="clearfix"></div>
+       <div class="clearfix"></div>
   </div>
 </header>

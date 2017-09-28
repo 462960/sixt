@@ -7,6 +7,10 @@
   font-family: 'Roboto', sans-serif;
   font-size: 18px; }
 
+/*------------------ Clear float------------------ */
+.clearfix {
+  clear: both; }
+
 /*------------------ Variables------------------ */
 /* Breakpoints */
 li {
@@ -28,9 +32,8 @@ header {
 
 .logo {
   display: block;
-  position: absolute;
-  top: 33px;
-  left: 22px;
+  float: left;
+  margin-top: 23px;
   height: 28px;
   width: 120px;
   cursor: pointer;
@@ -43,11 +46,10 @@ header {
   @media (min-width: 400px) {
     .logo {
       height: 28px;
-      width: 200px; } }
+      width: 160px; } }
   @media (min-width: 720px) {
     .logo {
-      top: 10px;
-      left: 20px;
+      margin-top: 10px;
       height: 58px;
       width: 250px; } }
 
@@ -57,17 +59,17 @@ header {
   height: 80px;
   max-width: 960px;
   min-width: 320px;
-  margin: 0 auto; }
+  margin: 0 auto;
+  z-index: 113; }
   .top-wrap .top-nav {
-    position: absolute;
+    position: relative;
+    float: right;
     background: #000;
     height: 80px;
     width: 160px;
-    top: 0;
-    right: 20px;
     padding-top: 30px;
     display: block;
-    z-index: 105; }
+    z-index: 113; }
     @media (min-width: 400px) {
       .top-wrap .top-nav {
         width: 195px; } }
@@ -112,9 +114,12 @@ header {
   background: #fff;
   width: 160px;
   position: absolute;
-  z-index: 102;
+  top: -150px;
+  z-index: 110;
   right: 20px;
-  border: 1px solid #000; }
+  border: 1px solid #000;
+  -webkit-transition: top 0.8s;
+  transition: top 0.8s; }
   .drop-nav li {
     padding: 5px;
     cursor: pointer; }
@@ -130,12 +135,7 @@ header {
 .active {
   background: #FF7D19; }
 
-.slide-up {
-  top: -150px;
-  -webkit-transition: top 0.8s;
-  transition: top 0.8s; }
-
-.slide-down {
+.slide-menu {
   top: 80px;
   -webkit-transition: top 0.8s;
   transition: top 0.8s; }
@@ -160,23 +160,23 @@ header {
     left: 0;
     right: 0; }
 
-.cycle-prev {
+.cycle-next {
   right: 10px; }
-  .cycle-prev:before {
+  .cycle-next:before {
     -webkit-transform: rotate(-45deg);
     transform: rotate(-45deg);
     bottom: 5px; }
-  .cycle-prev:after {
+  .cycle-next:after {
     -webkit-transform: rotate(45deg);
     transform: rotate(45deg); }
 
-.cycle-next {
+.cycle-prev {
   left: 10px; }
-  .cycle-next:before {
+  .cycle-prev:before {
     -webkit-transform: rotate(45deg);
     transform: rotate(45deg);
     bottom: 5px; }
-  .cycle-next:after {
+  .cycle-prev:after {
     -webkit-transform: rotate(-45deg);
     transform: rotate(-45deg); }
 
@@ -204,7 +204,7 @@ header {
           -webkit-box-flex: 4;
           -ms-flex: 4;
           flex: 4;
-          border-right: 6px solid #fff; }
+          margin-right: 6px; }
           .date-picker form > *:last-child {
             -webkit-box-flex: 1;
             -ms-flex: 1;
@@ -275,9 +275,9 @@ header {
     -ms-flex: 1;
     flex: 1; }
     .all-dates-holder > *:first-child {
-      border-right: 2px solid #fff; }
+      margin-right: 2px; }
     .all-dates-holder > *:last-child {
-      border-left: 2px solid #fff; }
+      margin-left: 2px; }
     .all-dates-holder > * input {
       width: 100%; }
 
