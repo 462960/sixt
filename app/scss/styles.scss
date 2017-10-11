@@ -5,6 +5,7 @@ li {
 }
 .wrapper {
   max-width: 1600px;
+  min-width: 320px;
   margin: 0 auto;
 }
 h2 {
@@ -33,7 +34,7 @@ header {
     overflow: hidden;
     @media (min-width: $bp-small){
       height: 28px;
-      width: 160px;
+      width: 150px;
     }
     @media (min-width: $bp-tablet){
       margin-top: 10px;
@@ -60,7 +61,7 @@ header {
     display: block;
     z-index: 113;
     @media (min-width: $bp-small){
-      width: 195px;
+      width: 193px;
     }
     @media (min-width: $bp-small-plus){
       width: 320px;
@@ -191,7 +192,6 @@ header {
       display: flex;
       & > * {
         flex: 4;
-        margin-right: 6px;
         &:last-child {
          flex: 1;
          height: 40px;
@@ -263,8 +263,6 @@ header {
   display: flex;
   & > * {
     flex: 1;
-    &:first-child {margin-right: 2px;}
-    &:last-child {margin-left: 2px ;}
     input {width: 100%;}
 }
 }

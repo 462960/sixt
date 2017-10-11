@@ -1,5 +1,6 @@
        <!--  Slider -->
-    <div class="cycle-slideshow"  
+    <div class="cycle-slideshow"
+    data-cycle-swipe=true  
     data-cycle-fx=scrollHorz
     data-cycle-timeout=0>
     	<div class="cycle-next"></div>
